@@ -69,11 +69,20 @@ function NoButton(props: NoButtonProps) {
     }
   };
 
+  const onClick = (e) => {
+    const b = btn.getBoundingClientRect();
+    const distance = Math.hypot(
+      b.left + b.width / 2 - e.clientX,
+      b.top + b.height / 2 - e.clientY,
+    );
+      moveAway(e.clientX, e.clientY);
+  }
+
   return (
     <button
       ref={btn}
-      onPointerMove={onPointerMove}
-      onClick={(e) => e.preventDefault()}
+      onPointerMove={(e) => e.preventDefault()}
+      onClick={onClick}
       class="absolute left-[62%] top-1/2 -translate-y-1/2 rounded-full bg-gray-200 px-6 py-4 text-lg font-extrabold text-gray-900 shadow-xl"
     >
       No
@@ -83,7 +92,6 @@ function NoButton(props: NoButtonProps) {
 
 export default function ChoiceZone(props: ChoiceZoneProps) {
   let zone!: HTMLDivElement;
-  let yesBtn!: HTMLButtonElement;
 
   // Signal for Yes button scale
   const [yesScale, setYesScale] = createSignal(1);
