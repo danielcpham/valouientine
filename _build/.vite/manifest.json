@@ -3,8 +3,8 @@
     "file": "assets/client-D4NWzmLr.css",
     "src": "_client-D4NWzmLr.css"
   },
-  "_client-DLtLPo9M.js": {
-    "file": "assets/client-DLtLPo9M.js",
+  "_client-_OY2zQDh.js": {
+    "file": "assets/client-_OY2zQDh.js",
     "name": "client",
     "dynamicImports": [
       "src/components/ConfettiLayer.tsx"
@@ -20,24 +20,24 @@
     "isDynamicEntry": true
   },
   "src/components/ConfettiLayer.tsx": {
-    "file": "assets/ConfettiLayer-CP3a138q.js",
+    "file": "assets/ConfettiLayer-CLzimzvP.js",
     "name": "ConfettiLayer",
     "src": "src/components/ConfettiLayer.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_client-DLtLPo9M.js"
+      "_client-_OY2zQDh.js"
     ],
     "dynamicImports": [
       "node_modules/canvas-confetti/dist/confetti.module.mjs"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-Cn92g2aS.js",
+    "file": "assets/client-Besh2TPk.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
-      "_client-DLtLPo9M.js"
+      "_client-_OY2zQDh.js"
     ]
   }
 }
