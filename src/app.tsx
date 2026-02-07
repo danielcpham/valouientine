@@ -32,6 +32,7 @@ export default function App() {
         {accepted() && (
           <div class="mt-6 animate-[pop_.35s_ease]">
             <h2 class="mb-2 text-4xl font-extrabold">YAY! 🎉</h2>
+            <h3>I love you :3</h3>
             <img
               class="mx-auto w-95"
               src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
